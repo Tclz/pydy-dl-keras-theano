@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
-# Author: yongyuan.name
 
 import numpy as np
 from numpy import linalg as LA
-
 from keras.applications.vgg16 import VGG16
 from keras.preprocessing import image
 from keras.applications.vgg16 import preprocess_input
+
 
 class VGGNet:
     def __init__(self):
@@ -29,5 +28,6 @@ class VGGNet:
         img = np.expand_dims(img, axis=0)
         img = preprocess_input(img)
         feat = self.model.predict(img)
+        #  LA.norm 求范数
         norm_feat = feat[0]/LA.norm(feat[0])
         return norm_feat
