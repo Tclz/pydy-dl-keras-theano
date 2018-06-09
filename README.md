@@ -1,7 +1,7 @@
 # Image Retrieval Engine Based on Keras
-#拍衣得衣 服装检索
+# 拍衣得衣 服装检索
 
-## 环境
+### 环境
 
 Keras + Theano + python 2.7
 
