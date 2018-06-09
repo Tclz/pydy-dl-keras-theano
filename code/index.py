@@ -29,8 +29,8 @@ def get_imlist(path):
 if __name__ == "__main__":
 
     # db = args["database"]
-    db = '../data/train/fengyi'
-    output = '../feature/dl_feature_cnn_6.hdf5'
+    db = '../data/train/lianyiqun'
+    output = '../feature/dl_feature_cnn_8.hdf5'
     img_list = get_imlist(db)
     type(img_list)
     print(img_list)
